@@ -12,9 +12,9 @@ pipeline {
                 sh 'git --version'
             }
         }
-        stage('install Docker') {
+        stage('curl') {
             steps {
-                sh 'sudo yum install docker.io -y'
+                sh 'sudo curl ident.me'
             }
         }
     }
